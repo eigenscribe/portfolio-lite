@@ -1,2 +1,2 @@
 # portfolio-lite
-One-click resume webpage — always live, always simple.
+One-click resume webpage that is simple and always live.
