@@ -1,1 +1,190 @@
+/* === FONTS & RESET === */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Aclonica, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* === CSS VARIABLES (THEME COLORS) === */
+:root {
+    /* Light theme (default) */
+    --bg: white;
+    --text: black;
+    --bg-image: url(https://assets.codepen.io/7124932/wispbackground.jpg?format=auto);
+}
+
+/* === MAIN LAYOUT === */
+main {
+    background: var(--bg);
+    color: var(--text);
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 120px 40px 40px 40px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* === GLASSMORPHISM CONTAINERS === */
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+}
+
+.container-projetos {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* === PROFILE STYLING === */
+.perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    object-fit: cover;
+}
+
+.title h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+}
+
+.title h3 {
+    margin: 0 0 5px 0;
+    color: var(--text);
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+.title p {
+    margin: 0 0 20px 0;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.link-icon {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.8rem;
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.link-icon:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+/* === GRADIENT TEXT === */
+.gradient_text1 {
+    font-weight: bold;
+    background: -webkit-linear-gradient(#14a5ff, #8138ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+.gradient_text2 {
+    font-weight: bold;
+    background: linear-gradient(#00ffee, #27aaff);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* === PROJECTS SECTION === */
+.projetos {
+    width: 100%;
+    max-width: 600px;
+}
+
+.container-projetos h4 {
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+}
+
+.line-1 {
+    margin: 0 0 25px 0;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.container-projetos ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container-projetos li {
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.container-projetos li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.container-projetos li a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .title h1 {
+        font-size: 2rem;
+    }
+    
+    main {
+        padding: 60px 20px 20px 20px;
+    }
+}
