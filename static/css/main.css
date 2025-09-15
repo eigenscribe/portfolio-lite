@@ -132,7 +132,7 @@ mjx-container, mjx-container *,
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: ver(--shadow-header);
+    box-shadow: var(--shadow-header);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
