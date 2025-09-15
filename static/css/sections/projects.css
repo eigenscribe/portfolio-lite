@@ -1,0 +1,48 @@
+/* ----- Projects Section ---- */
+.projects-section {
+    background: rgba(192, 192, 192, 0.1);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    margin: 2rem 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--glass-border);
+}
+
+.projects-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.projects-list {
+    list-style: none;
+    padding: 0;
+}
+
+.projects-list li {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-sm);
+    transition: background 0.3s ease;
+}
+
+.projects-list li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.projects-list a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.projects-list a:hover {
+    color: #00e8ff;
+    text-decoration: underline;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}

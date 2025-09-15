@@ -1,0 +1,25 @@
+/* ----- FUTURE CONTENT PLACEHOLDERS ---- */ 
+.future-section {
+    background: var(--glass-bg);
+    border: 2px dashed var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    margin: 30px 0;
+    text-align: center;
+    color: var(--color-muted);
+    transition: all 0.3s ease;
+}
+
+.future-section:hover {
+    border-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.future-section h3 {
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+.future-section p {
+    font-style: italic;
+}
