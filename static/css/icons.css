@@ -82,4 +82,17 @@
 }
 
 /* Tech icon mappings */
-.tech-icon[data-icon="python"]::after { content: ":snake:"}
+.tech-icon[data-icon="python"]::after { content: "🐍"}
+.tech-icon[data-icon="javascript"]::after { content: "🟨"; }
+.tech-icon[data-icon="html"]::after { content: "🌐"; }
+.tech-icon[data-icon="css"]::after { content: "🎨"; }
+.tech-icon[data-icon="flask"]::after { content: "🌶️"; }
+.tech-icon[data-icon="react"]::after { content: "⚛️"; }
+
+/* STEM icon mappings */
+.stem-icon[data-icon="calculus"]::after { content: "∫"; }
+.stem-icon[data-icon="data"]::after { content: "📊"; }
+.stem-icon[data-icon="physics"]::after { content: "🌌"; }
+.stem-icon[data-icon="chemistry"]::after { content: "⚗️"; }
+.stem-icon[data-icon="neuroscience"]::after { content: "🧠"; }
+.stem-icon[data-icon="nonlinear-dynamics"]::after { content: "🌀"; }
