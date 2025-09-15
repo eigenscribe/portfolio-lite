@@ -1,0 +1,85 @@
+/* ----- Icon System ----- */
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 15px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.feature-box:hover .icons {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tech-icon, .stem-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    cursor: default;
+    z-index: 1;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    background: radial-gradient(circle at 30% 30%,
+                                rgba(255, 255, 255, 0.9) 0%,
+                                rgba(0, 255, 255, 0.6) 40%,
+                                rgba(0, 100, 200, 0.8) 100%
+                               );
+    box-shadow: 0 4px 15px rgba(0, 150, 255, 0.4);
+}
+
+.tech-icon {
+    background: var(--tech-icon-gradient);
+}
+
+.stem-icon {
+    background: var(--stem-icon-gradient);
+}
+
+.tech-icon:hover, .stem-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    box-shadow: 0 6px 20px rgba(0, 150, 255, 0.6);
+}
+
+/* Icon tooltips */
+.tech-icon .tooltip,
+.stem-icon .tooltip {
+    visibility: hidden;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+.tech-icon:hover .tooltip, 
+.stem-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Tech icon mappings */
+.tech-icon[data-icon="python"]::after { content: ":snake:"}

@@ -1,0 +1,142 @@
+/* ----- Profile Section ----- */
+.profile-section{
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--color-text);
+    border-radius: 20px;
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-image {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.profile-info {
+    margin-left: 2rem;
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
+}
+
+.profile-info h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: var(--gradient-light-to-dark-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: trasparent; 
+    background-clip: text;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    position: relative;
+}
+
+.profile-info h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.profile-tagline{
+    font-size: 0.9rem;
+    color: var(--color-muted);
+    margin-bottom: 1rem;
+}
+
+/* Animated typewriter text */
+.typewriter-text {
+    position: relative;
+    font-size: 0.9rem;
+    color: var(--color-text);
+    white-space: normal;
+    overflow: visible;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    opacity: 0.8;
+    max-width: 100%;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+@keyframes blinkCursor {
+    from { border-right-color: rgba(255, 255, 255, 0.75); }
+    to { border-right-color: transparent; }
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+.social-link {
+    font-size: 1.5rem;
+    color: #bd93f9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Section Headers with Gradients */
+.section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* About Me HEader */
+#about h2 {
+    background: var(--gradient-green-to-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: trasparent;
+    background-clip: text;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#about .section {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+/* Skills Header */
+#skills h2 {
+    background: var(--gradient-cyan-to-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: trasnparent;
+    background-clip: text;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Projects Header */
+#projects h2 {
+    background: var(--gradient-light-to-dark-blue);
+    -webkit-background-clip: text;
+    -wekbit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Contact Header */
+#contact h2 {
+    background: var(--blue-to-purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
