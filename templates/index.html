@@ -11,6 +11,8 @@
         <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon.png') }}">    
         <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.png') }}">
         <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="https://kit.fontawesome.com/d37c5443c6.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- Site Header -->
@@ -31,7 +33,27 @@
             <!-- Profile Section -->
              <section id="profile" class="profile-section">
                 <div class="profile-header">
-                    
+                    <img src="{{ url_for('static', filename='images/me.jpg') }}" 
+                        alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h1>Lauren Shriver</h1>
+                        <h3>STEM Contractor</h3>
+                        <p class="profile-tagline">#tutor #AI-trainer #STEM</p>
+                        <p class="typewriter-text">Navigating through the digitial age as a remote STEM contractor</p>
+
+                        <!-- Social Links -->
+                        <div class="social-links">
+                            <a href="https://github.com/eigenscribe" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/lshriver/" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:lshriver@protonmail.com" class="social-link" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
              </section>
