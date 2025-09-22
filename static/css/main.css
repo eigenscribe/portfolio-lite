@@ -35,6 +35,12 @@
     --font-math: "Times New Roman", "Computer Modern", serif;
 
     /* Borders & Radius */ 
+    --border-xs: 4px;
+    --border-sm: 8px;
+    --border-md: 12px;
+    --border-lg: 24px;
+    --border-xl: 40px;
+
     --radius-sx: 4px;
     --radius-sm: 8px;
     --radius-md: 16px;
@@ -127,7 +133,7 @@ mjx-container, mjx-container *,
     background: var(--gradient-blue-to-purple-transparent);
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
-    padding: var(--space-sm) var(--space-lg);
+    padding: var(--border-md) var(--border-lg);
     z-index: 100;
     display: flex;
     align-items: center;
@@ -137,7 +143,7 @@ mjx-container, mjx-container *,
 }
 
 .site-logo { 
-    height: 50px;
+    height: 75px;
     width: auto;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -166,7 +172,7 @@ mjx-container, mjx-container *,
 
 .nav a {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding: 6px 12px;
     border-radius: var(--radius-pill);
     text-decoration: none;

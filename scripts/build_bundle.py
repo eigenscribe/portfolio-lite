@@ -25,7 +25,6 @@ BUILD_DIR.mkdir(parents=True, exist_ok=True)
 # 2️⃣ Order of files (adjust if your filenames differ)
 # ----------------------------------------------------------------------
 ORDER = [
-    "main.css",
     "sections/profile.css",
     "sections/projects.css",
     "sections/future-content.css",
