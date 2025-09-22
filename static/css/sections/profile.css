@@ -30,10 +30,11 @@
 .profile-info h1 {
     font-size: 2.2rem;
     font-weight: 700;
-    background: var(--gradient-light-to-dark-blue);
+    background: var(--gradient-green-to-blue);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: trasparent; 
     background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
     margin-bottom: 0.5rem;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     display: inline-block;
